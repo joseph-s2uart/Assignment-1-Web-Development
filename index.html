@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      console.log(1 + "2" + "2");
+      /*Explanation:- 
+      The output for the above code will be 122 , because as the 1 is not enclosed in quotes it will an integer and prited as one the next + sign is for concatination , the next 2 is enclosed in "2" so it will be considred as a string  */
+      console.log(1 + +"2" + "2");
+      /*Explanation:-
+      The output for the above code will be 32  as 2 + signs used 1 and 2 will be added and the next 2 is quoted so it prints as a string*/
+      console.log(1 + -"1" + "2");
+      /*Explanation:-
+      The output for the above code will be 02 as + and -  operators are used  together 1 and 1 will be subracted and printed as 2 and the next 2 is quoted so it prints as a string
+      */
+      console.log(+"1" + "1" + "2");
+      /*Explanation:-
+      The output for the above code will be 112  as every numbers are enclosed in quotes it will be considered as string and printed as it is */
+      console.log("A" - "B" + "2");
+      /*Explanation:-
+      The output for the above code will be NaN2 as we are trying to do an arithmetic operation between a Alphabet this result comes*/
+      console.log("A" - "B" + 2);
+      /*Explanation:-
+      The output for the above code will be NaN as we are trying to do an arithmetic operation between a Alphabet this result comes*/
+    </script>
+  </body>
+</html>
